@@ -1,0 +1,28 @@
+{
+  "name": "restify-redisCloud-example",
+  "description": "A restify back-end, configured to provide API endpoints that connect to RedisCloud for hosted access to Redis and Memcache datastores",
+  "version": "0.0.1",
+  "private": true,
+  "engines": {
+    "node": "0.10.x",
+    "npm": "1.2.x"
+  },
+  "dependencies": {
+    "config": "0.4.x",
+    "restify": "2.5.x",
+    "redis": "~0.9.0",
+    "hiredis": "~0.1.15"
+  },
+  "devDependencies": {
+    "jasmine-node": "1.6.x",
+    "request": "2.24.x"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ryanj/restify-redisCloud.git"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "main": "server.js"
+}

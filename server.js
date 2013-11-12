@@ -19,7 +19,7 @@ app.use(restify.fullResponse())
 
 // Routes
 app.get('/set', function (req, res, next){
-  var result = client.set({'welcome_msg': "Hello World"};
+  var result = client.set('welcome_msg', "Hello World");
   res.send(result);
 });
 app.get('/get', function (req, res, next){

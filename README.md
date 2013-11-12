@@ -11,7 +11,7 @@ This git repository contains some basic setup and usage examples for Redis Cloud
 4. Clone and Deploy on OpenShift, supplying your redis host, port, and password as application configuration details.  
 
 ```
-    rhc app create rediscloud nodejs-0.10 --from-code git://github.com/openshift-quickstart/rediscloud-openshift-quickstart.git --env REDISCLOUD_URL=YOUR_REDISCLOUD_HOSTNAME --env REDISCLOUD_PORT=YOUR_REDISCLOUD_DB_PORT --env=REDISCLOUD_PASSWORD=YOUR_REDISCLOUD_DB_PASSWORD
+    rhc app create rediscloud nodejs-0.10 --from-code git://github.com/ryanj/restify-redisCloud.git --env REDISCLOUD_URL=YOUR_REDISCLOUD_HOSTNAME --env REDISCLOUD_PORT=YOUR_REDISCLOUD_DB_PORT --env=REDISCLOUD_PASSWORD=YOUR_REDISCLOUD_DB_PASSWORD
 ```
 I've uesed "rediscloud" as my application name in the above example. I've also supplied an application source url, as well as several configuration details.
 If the `--from-code` option is not recognized, update your `rhc` gem.  You can include your RedisCloud connection details as a part of the application creation process, or reconfigure your app after deploying.

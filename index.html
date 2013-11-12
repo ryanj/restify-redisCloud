@@ -40,6 +40,8 @@
   <b>To see a list of your application's current configuration keys, type:</b>
   <pre>rhc env list</pre>
 
+  <p>Once your application is configured, the following basic API should be available:
+
   <h2>Actions</h2>
 
   <a href="/set">Click here to <b>set</b> a key in Redis Cloud</a><br /><br />
@@ -47,14 +49,20 @@
   <a href="/info">Click here to get<b> info</b> about your Redis Cloud DB</a><br /><br />
   <a href="/flush">Click here to <b> flushall</b> your Redis Cloud DB</a><br /><br />
 
+  <h2>Local Development</h2>
+  <p>Set the same environment variables in your local development enviroment to share access to your DB.</p>
+  <pre>export REDISCLOUD_URL=YOUR_REDIS_CLOUD_HOSTNAME</pre>
+  <pre>export REDISCLOUD_PORT=YOUR_REDIS_CLOUD_PORT</pre>
+  <pre>export REDISCLOUD_PASSWORD=YOUR_REDIS_CLOUD_PASSWORD</pre>
+  <p>Then start your local server with:</p>
+  <pre>npm start</pre>
 
   <h2>
     What's next?
   </h2>
   <ul>
-    <li>
-      Learn more at <a href="http://redis-cloud.com" target="_blank">Redis Cloud</a>
-    </li>
+    <li>Update your <b>server.js</b> file to experiment with your new Redis DB</li>
+    <li>Learn more at <a href="http://redis-cloud.com" target="_blank">Redis Cloud</a></li>
   </ul>
   <span id="fossribbon"><a href="https://openshift.redhat.com/app/console/application_types/custom?initial_git_url=https%3A%2F%2Fgithub.com/ryanj/restify-redisCloud.git&cartridges[]=nodejs-0.10&name=rediscloud">Run me on OpenShift</a></span>
 </body>
